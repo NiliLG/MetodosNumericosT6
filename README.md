@@ -107,6 +107,8 @@ Para un método de Taylor de orden 𝑛, la fórmula es:
 
 ![Captura_de_pantalla_2024-05-26_102411-removebg-preview](https://github.com/NiliLG/MetodosNumericosT6/assets/147437701/c8f2d3b5-70e4-4b45-8adc-7ebb9eb30985)
 
+![Captura_de_pantalla_2024-05-26_114655-removebg-preview](https://github.com/NiliLG/MetodosNumericosT6/assets/147437701/b6a2e878-bf95-4147-af42-6dd6debbe6f5)
+
 Algoritmo
 ```java
     1. Declarar x0 como el límite inferior (lim inf).
