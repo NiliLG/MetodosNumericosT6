@@ -52,10 +52,7 @@ Algoritmo
         x[i + 1] = x[i] + deltaX
         y[i + 1] = y[i] + deltaX * f(x[i])
         exactY[i + 1] = solExac(x[i + 1])
-    Imprimir "X\tY(Verdadero)\tY(Euler)"
-    Para i desde 0 hasta steps
-        Imprimir x[i], exactY[i], y[i] con formato "%.2f\t%.5f\t\t%.5f\n"
-    Fin Para
+    Imprimir iteraciones en formato de tabla
 
 ```
 
