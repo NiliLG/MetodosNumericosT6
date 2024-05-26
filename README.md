@@ -58,6 +58,46 @@ Algoritmo
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/EulerMN)
 ## Runge-Kutta
+es un algoritmo numérico utilizado para aproximar soluciones de ecuaciones diferenciales ordinarias (EDOs). 
+Es especialmente útil cuando se busca una mayor precisión que la proporcionada por métodos más simples como el de Euler. 
+Este método utiliza múltiples evaluaciones ponderadas de la función en cada paso para mejorar la aproximación de la solución. 
+En el contexto del programa proporcionado, el método de Runge-Kutta de cuarto orden se implementa para calcular los valores aproximados de la solución de la EDO en diferentes puntos dentro de un intervalo dado.
+
+Fórmula:
+
+y(i+1) = yi + (1/6)*(k1 + 2*k2 + 2*k3 + k4)
+
+k1 = h * f(xi, yi)
+
+k2 = h * f(xi + h/2, yi + k1/2)
+
+k3 = h * f(xi + h/2, yi + k2/2)
+
+k4 = h * f(xi + h, yi + k3)
+
+Algoritmo
+```java
+    Declarar x0 (lim inf)
+    Declarar xf (lim sup)
+    Declarar deltaX(tamaño de paso)
+    Declarar y0 (condición inicial)
+    Declarar steps como Entero ((xf - x0) / deltaX)
+    Declarar un arreglo x de tamaño (steps + 1)
+    Declarar un arreglo y de tamaño (steps + 1)
+    Declarar un arreglo exactY de tamaño (steps + 1)
+    Declarar condiciones iniciales
+    x[0] = x0
+    y[0] = y0
+    exactY[0] = solExac(x0)
+    Para i desde 0 hasta steps
+        x[i + 1] = x[i] + deltaX
+        y[i + 1] = y[i] + deltaX * f(x[i])
+        exactY[i + 1] = solExac(x[i + 1])
+    Imprimir iteraciones en formato de tabla
+
+```
+
+[Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/EulerMN)
 
 ## Taylor
 
