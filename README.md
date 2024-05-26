@@ -59,7 +59,7 @@ Actualizar el polinomio de interpolación 𝑃(𝑥): *Sumar al polinomio de int
 Simplificar *Simplificar 𝑃(𝑥) si es necesario para obtener el polinomio en su forma más simple.
 ```
 
-[Implementación](https://github.com/NiliLG/MetodosNumericosT5/tree/master/Interpolaci%C3%B3n/Lagrange)
+[Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/EulerMN)
 ## Runge-Kutta
 
 ## Taylor
