@@ -56,6 +56,9 @@ Algoritmo
 ```
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/EulerMN)
+
+![image](https://github.com/NiliLG/MetodosNumericosT6/assets/147437701/2c28ffab-0d67-4ea9-b35e-b1dffedfc103)
+
 ## Runge-Kutta
 es un algoritmo numérico utilizado para aproximar soluciones de ecuaciones diferenciales ordinarias (EDOs). 
 Es especialmente útil cuando se busca una mayor precisión que la proporcionada por métodos más simples como el de Euler. 
@@ -90,6 +93,7 @@ Algoritmo
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/Runge-KuttaMN)
 
+![image](https://github.com/NiliLG/MetodosNumericosT6/assets/147437701/4c24e992-05c8-495d-b368-68d4f144e0f1)
 ## Taylor
 Es una técnica numérica utilizada para resolver ecuaciones diferenciales ordinarias (EDOs) mediante la expansión de la solución en una serie de Taylor alrededor de un punto. Este método se basa en utilizar las derivadas sucesivas de la función en el punto inicial para construir una serie que aproxima la solución de la ecuación diferencial.
 
@@ -127,6 +131,7 @@ Algoritmo
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/TaylorMN)
 
+![image](https://github.com/NiliLG/MetodosNumericosT6/assets/147437701/335c11e6-a6d9-4cbe-a902-c598b21b8825)
 # Conclusión
 Los métodos de Runge-Kutta, Euler y Taylor son herramientas fundamentales en la resolución numérica de ecuaciones diferenciales ordinarias (EDOs). Runge-Kutta destaca por su precisión y versatilidad, siendo especialmente útil para problemas donde se requiere una alta precisión. Euler, aunque menos preciso, es simple y fácil de implementar, siendo útil como punto de partida en muchos casos. Taylor ofrece una precisión aún mayor al considerar términos de orden superior, pero su implementación puede ser más compleja. En conjunto, estos métodos ofrecen un amplio rango de opciones para abordar problemas donde no es posible encontrar soluciones analíticas exactas.
 
