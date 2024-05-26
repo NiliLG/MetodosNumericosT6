@@ -10,20 +10,8 @@ Equipo:
 * [Introducción](#introducción)
 * [Métodos](#interpolación)
   * [Euler](#interpolación)
-    * [Concepto](#lineal)
-    * [Fórmula](#cuadrática)
-    * [Algoritmo](#newton)
-    * [Implementación](#lagrange)
   * [Runge-Kutta](#extrapolación)
-    * [Concepto](#lineal)
-    * [Fórmula](#cuadrática)
-    * [Algoritmo](#newton)
-    * [Implementación](#lagrange)
   * [Taylor](#interpolación)
-    * [Concepto](#lineal)
-    * [Fórmula](#cuadrática)
-    * [Algoritmo](#newton)
-    * [Implementación](#lagrange)
 * [Conclusiones](#conclusiones)
 * [Bibliografía](#bibliografía)
 
@@ -48,15 +36,27 @@ Fórmula:
 
 Algoritmo
 ```java
-Inicializar el polinomio de interpolación:
-𝑃(𝑥) = 0.
-Para cada punto (𝑥𝑖,𝑦𝑖) en el conjunto de puntos:
-Inicializar el polinomio básico de Lagrange 𝐿𝑖(𝑥)=1.
-Construir el polinomio básico 𝐿𝑖(𝑥) para cada 𝑖:
-Para cada 𝑗 de 0 a 𝑛, donde 𝑗≠𝑖:
-Actualizar 𝐿𝑖(𝑥) multiplicándolo por ((𝑥−𝑥𝑗)/(𝑥𝑖−𝑥𝑗))​.
-Actualizar el polinomio de interpolación 𝑃(𝑥): *Sumar al polinomio de interpolación 𝑃(𝑥) el término 𝑦𝑖⋅𝐿𝑖(𝑥).
-Simplificar *Simplificar 𝑃(𝑥) si es necesario para obtener el polinomio en su forma más simple.
+    Declarar x0 (lim inf)
+    Declarar xf (lim sup)
+    Declarar deltaX(tamaño de paso)
+    Declarar y0 (condición inicial)
+    Declarar steps como Entero ((xf - x0) / deltaX)
+    Declarar un arreglo x de tamaño (steps + 1)
+    Declarar un arreglo y de tamaño (steps + 1)
+    Declarar un arreglo exactY de tamaño (steps + 1)
+    Declarar condiciones iniciales
+    x[0] = x0
+    y[0] = y0
+    exactY[0] = solExac(x0)
+    Para i desde 0 hasta steps
+        x[i + 1] = x[i] + deltaX
+        y[i + 1] = y[i] + deltaX * f(x[i])
+        exactY[i + 1] = solExac(x[i + 1])
+    Imprimir "X\tY(Verdadero)\tY(Euler)"
+    Para i desde 0 hasta steps
+        Imprimir x[i], exactY[i], y[i] con formato "%.2f\t%.5f\t\t%.5f\n"
+    Fin Para
+
 ```
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/EulerMN)
