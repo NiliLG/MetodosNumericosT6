@@ -36,24 +36,23 @@ Fórmula:
 
 Algoritmo
 ```java
-    Declarar x0 (lim inf)
-    Declarar xf (lim sup)
-    Declarar deltaX(tamaño de paso)
-    Declarar y0 (condición inicial)
-    Declarar steps como Entero ((xf - x0) / deltaX)
-    Declarar un arreglo x de tamaño (steps + 1)
-    Declarar un arreglo y de tamaño (steps + 1)
-    Declarar un arreglo exactY de tamaño (steps + 1)
-    Declarar condiciones iniciales
-    x[0] = x0
-    y[0] = y0
-    exactY[0] = solExac(x0)
-    Para i desde 0 hasta steps
-        x[i + 1] = x[i] + deltaX
-        y[i + 1] = y[i] + deltaX * f(x[i])
-        exactY[i + 1] = solExac(x[i + 1])
-    Imprimir iteraciones en formato de tabla
-
+    1. Declarar x0 como el límite inferior (lim inf).
+    2. Declarar xf como el límite superior (lim sup).
+    3. Declarar deltaX como el tamaño de paso.
+    4. Declarar y0 como la condición inicial.
+    5. Calcular el número de pasos (steps) como Entero ((xf - x0) / deltaX).
+    6. Declarar un arreglo x de tamaño (steps + 1) para almacenar los valores de x.
+    7. Declarar un arreglo y de tamaño (steps + 1) para almacenar los valores de y.
+    8. Declarar un arreglo exactY de tamaño (steps + 1) para almacenar los valores de la solución exacta.
+    9. Asignar las condiciones iniciales:
+        - x[0] = x0
+        - y[0] = y0
+        - exactY[0] = solExac(x0)
+    10. Iterar desde 0 hasta steps:
+        a. Calcular el siguiente valor de x: x[i + 1] = x[i] + deltaX.
+        b. Calcular el siguiente valor de y utilizando la fórmula de Euler: y[i + 1] = y[i] + deltaX * f(x[i]).
+        c. Calcular el valor exacto de la solución en x[i + 1]: exactY[i + 1] = solExac(x[i + 1]).
+    11. Imprimir las iteraciones en formato de tabla.
 ```
 
 [Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/EulerMN)
