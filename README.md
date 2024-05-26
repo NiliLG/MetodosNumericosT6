@@ -3,7 +3,7 @@
 Equipo:
 
 * Nili Estefanía López Gutierrez 
-*Elton Yael Alba Roldan
+* Elton Yael Alba Roldan
 
 # Índice
 
