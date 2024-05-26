@@ -8,10 +8,10 @@ Equipo:
 # Índice
 
 * [Introducción](#introducción)
-* [Métodos](#interpolación)
-  * [Euler](#interpolación)
-  * [Runge-Kutta](#extrapolación)
-  * [Taylor](#interpolación)
+* [Métodos](#metodos)
+  * [Euler](#euler)
+  * [Runge-Kutta](#runge-kutta)
+  * [Taylor](#taylor)
 * [Conclusiones](#conclusiones)
 * [Bibliografía](#bibliografía)
 
