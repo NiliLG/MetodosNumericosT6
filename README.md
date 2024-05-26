@@ -12,7 +12,7 @@ Equipo:
   * [Euler](#euler)
   * [Runge-Kutta](#runge-kutta)
   * [Taylor](#taylor)
-* [Conclusiones](#conclusiones)
+* [Conclusión](#conclusión)
 * [Bibliografía](#bibliografía)
 
 # Introducción
