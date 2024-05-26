@@ -77,27 +77,19 @@ k4 = h * f(xi + h, yi + k3)
 
 Algoritmo
 ```java
-    Declarar x0 (lim inf)
-    Declarar xf (lim sup)
-    Declarar deltaX(tamaño de paso)
-    Declarar y0 (condición inicial)
-    Declarar steps como Entero ((xf - x0) / deltaX)
-    Declarar un arreglo x de tamaño (steps + 1)
-    Declarar un arreglo y de tamaño (steps + 1)
-    Declarar un arreglo exactY de tamaño (steps + 1)
-    Declarar condiciones iniciales
-    x[0] = x0
-    y[0] = y0
-    exactY[0] = solExac(x0)
-    Para i desde 0 hasta steps
-        x[i + 1] = x[i] + deltaX
-        y[i + 1] = y[i] + deltaX * f(x[i])
-        exactY[i + 1] = solExac(x[i + 1])
-    Imprimir iteraciones en formato de tabla
-
+    1. Inicializar las condiciones iniciales: y0 y x0.
+    2. Definir el tamaño del paso (Δx) y el número de pasos (iteraciones).
+    3. Crear arreglos para almacenar los valores de x, y y la solución exacta en cada iteración.
+    4. Asignar los valores iniciales a los arreglos.
+    5. Iterar desde 0 hasta el número de pasos:
+       - Calcular el siguiente valor de x: xi+1 = xi + Δx.
+       - Calcular los coeficientes k1, k2, k3 y k4 utilizando la función f(x).
+       - Utilizar los coeficientes para calcular el siguiente valor de y utilizando la fórmula de Runge-Kutta de cuarto orden: yi+1 = yi + (1/6)*(k1 + 2*k2 + 2*k3 + k4).
+       - Calcular el valor exacto de la solución en xi+1.
+    6. Mostrar los resultados, mostrando x, la solución exacta y la solución aproximada obtenida con el método de Runge-Kutta en cada iteración.
 ```
 
-[Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/EulerMN)
+[Implementación](https://github.com/NiliLG/MetodosNumericosT6/tree/main/Runge-KuttaMN)
 
 ## Taylor
 
