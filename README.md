@@ -8,7 +8,7 @@ Equipo:
 # Índice
 
 * [Introducción](#introducción)
-* [Métodos](#metodos)
+* [Métodos](#métodos)
   * [Euler](#euler)
   * [Runge-Kutta](#runge-kutta)
   * [Taylor](#taylor)
